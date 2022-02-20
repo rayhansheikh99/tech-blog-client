@@ -9,12 +9,16 @@ import {
 import Footer from "./Pages/Footer/Footer";
 import Login from './Pages/Login/Login';
 import Navbar from "./Pages/Header/Navbar";
+import AuthProvider from "./Contexts/AuthProvider";
+import Signup from './Pages/Signup/Signup';
 
 
 function App() {
   return (
     <div className="">
+         <AuthProvider>
         <Router>
+         
           <Navbar/>
        <Switch>
          <Route exact path="/">
@@ -26,9 +30,14 @@ function App() {
          <Route path="/login">
             <Login/>
          </Route>
+         <Route path="/signup">
+            <Signup/>
+         </Route>
         </Switch>
           <Footer/>
+          
         </Router>
+        </AuthProvider>
     </div>
   );
 }

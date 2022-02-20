@@ -6,3 +6,8 @@
   overflow: hidden;
   background-repeat: no-repeat;
 }
+.bg-login {
+  background-color: rgba(81, 144, 160, 0);
+  border: none;
+  border-bottom: gray solid 2px;
+}
