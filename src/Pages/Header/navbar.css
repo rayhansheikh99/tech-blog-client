@@ -1,0 +1,12 @@
+.img-h {
+  height: 500px;
+}
+.logo-name {
+  font-family: "Courier New", Courier, monospace;
+}
+
+@media only screen and (max-width: 600px) {
+  .img-h {
+    height: 300px;
+  }
+}
