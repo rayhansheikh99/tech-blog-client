@@ -11,6 +11,10 @@ import Login from './Pages/Login/Login';
 import Navbar from "./Pages/Header/Navbar";
 import AuthProvider from "./Contexts/AuthProvider";
 import Signup from './Pages/Signup/Signup';
+import PostDetails from './Pages/PostDetails/PostDetails';
+import CreatePost from './Pages/CreatePost/CreatePost';
+import Update from './Pages/Update/Update';
+import Blogs from "./Pages/Blogs/Blogs";
 
 
 function App() {
@@ -32,6 +36,18 @@ function App() {
          </Route>
          <Route path="/signup">
             <Signup/>
+         </Route>
+         <Route path="/blogs">
+            <Blogs/>
+         </Route>
+         <Route path="/postdetails/:Id">
+            <PostDetails/>
+         </Route>
+         <Route path="/createpost">
+            <CreatePost/>
+         </Route>
+         <Route path="/update/:Id">
+            <Update/>
          </Route>
         </Switch>
           <Footer/>
