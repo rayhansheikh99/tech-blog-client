@@ -7,18 +7,18 @@ import './sidebar.css'
 const Sidebar = () => {
     return (
         <div>
-        <div className='about text-center my-10 '>
-            <h1 className='my-3 mx-6 border-y-2 p-3 font-serif border-green-400'>ABOUT US</h1>
-            <p className='my-6 mx-10 text-xs md:text-base text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id similique aspernatur ea dignissimos voluptatum alias. Asperiores cumque voluptates id nisi, vitae provident porro, placeat nulla modi voluptas rem enim temporibus.</p>
+        <div className='my-10 text-center about '>
+            <h1 className='p-3 mx-6 my-3 font-serif border-green-400 border-y-2'>ABOUT US</h1>
+            <p className='mx-10 my-6 text-xs text-justify md:text-base'>RS Blog is a blog website for everyone and that's made clear on its old about us page, it made this clear. Everyone can share their article here about their experience.</p>
         </div>
         <div className='category'>
             <div>
                 <div>
-                <Link className='block mt-4 px-2 lg:mx-6 hover:bg-gray-200 font-serif py-2 text-center' to="/blogs">ALL CATEGORY</Link>
-                    <Link className='block lg:mx-6 hover:bg-gray-200 border-y-2 py-2 text-center' to="/tech">Tech</Link>
-                    <Link className='block lg:mx-6 hover:bg-gray-200 py-2 text-center' to="/movies">Movies</Link>
-                    <Link className='block lg:mx-6 hover:bg-gray-200 border-y-2 py-2 text-center' to="/sports">Sports</Link>
-                    <Link className='block lg:mx-6 hover:bg-gray-200 border-b-2 py-2 text-center mb-4' to="/music">Music</Link>
+                <Link className='block px-2 py-2 mt-4 font-serif text-center lg:mx-6 hover:bg-gray-200' to="/blogs">ALL CATEGORY</Link>
+                    <Link className='block py-2 text-center lg:mx-6 hover:bg-gray-200 border-y-2' to="/tech">Tech</Link>
+                    <Link className='block py-2 text-center lg:mx-6 hover:bg-gray-200' to="/movies">Movies</Link>
+                    <Link className='block py-2 text-center lg:mx-6 hover:bg-gray-200 border-y-2' to="/sports">Sports</Link>
+                    <Link className='block py-2 mb-4 text-center border-b-2 lg:mx-6 hover:bg-gray-200' to="/music">Music</Link>
                 </div>
             </div>
         </div>

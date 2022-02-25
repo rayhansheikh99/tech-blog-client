@@ -1,8 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
-import { PencilAltIcon, TrashIcon } from '@heroicons/react/outline';
+
 
 const PostDetails = () => {
 
@@ -11,7 +11,7 @@ const PostDetails = () => {
     const {Id} = useParams();
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/posts`)
+        fetch(`http://localhost:5000/allposts`)
         .then(res => res.json())
         .then(data => setPost(data))
     },[])
@@ -26,20 +26,15 @@ const PostDetails = () => {
     return (
         <div>
             <div className='lg:mx-28'>
-               <img className=' w-full h-60 lg:h-96' src={postDetails?.image} alt=""/> 
+               <img className='w-full h-60 lg:h-96' src={postDetails?.image} alt=""/> 
             </div>
-            <div>
-            <span className='lg:mx-28 mx-10'>
-                <Link to={`/update/${postDetails?._id}`}><PencilAltIcon className="inline h-6 lg:h-10 m-3 text-blue-400" aria-hidden="true" /></Link>
-                <TrashIcon className=" h-6 inline lg:h-9 m-3 text-red-700" aria-hidden="true" />
-                </span>
-            </div>
-            <div className='grid grid-cols-3 text-sm lg:mx-28 justify-items-center mt-2 text-gray-700'>
+            
+            <div className='grid grid-cols-3 mt-2 text-sm text-gray-700 lg:mx-28 justify-items-center'>
                 <span>Author: {postDetails?.author}</span>
-                <span><span>Category: </span>{postDetails?.category}</span>
+                <span><span>Category: </span>{postDetails?.category || postDetails?.category2}</span>
                 <span>{postDetails?.date}</span>
             </div>
-            <div className='my-8 text-center text-xl mx-6 lg:text-2xl font-serif'>
+            <div className='mx-6 my-8 font-serif text-xl text-center lg:text-2xl'>
                 <h1>{postDetails?.title}</h1>
             </div>
             <div className='mx-10 lg:mx-36 mb-60'>
