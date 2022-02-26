@@ -104,7 +104,7 @@ const useFirebase = ()=>{
             setIsLoading(false);
         });
         return ()=> unsubscribed;
-    },[])
+    },[auth])
 
     useEffect(() => {
         fetch(`https://boiling-crag-65748.herokuapp.com/users/${user.email}`)
@@ -146,7 +146,7 @@ const useFirebase = ()=>{
         saveUser,
         signInWithGoogle,
         admin,
-        
+        authError
 
 
         

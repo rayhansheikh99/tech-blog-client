@@ -6,7 +6,7 @@ import { LockOpenIcon } from '@heroicons/react/outline';
 
 const Signup = () => {
     //sign up system apply here
-  const {signInWithGoogle, handleNameChange, handleRegistration, handleEmailChange, handlePasswordChange, error} = useFirebase();
+  const {signInWithGoogle, handleNameChange, handleRegistration, handleEmailChange, handlePasswordChange} = useFirebase();
   
   const history = useHistory();
   let location = useLocation();
