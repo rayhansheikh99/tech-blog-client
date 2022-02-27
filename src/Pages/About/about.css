@@ -1,0 +1,8 @@
+.bg-text {
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  /* top: 19%; */
+  left: auto;
+  width: 100%;
+  text-align: center;
+}

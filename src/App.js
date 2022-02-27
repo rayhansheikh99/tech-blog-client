@@ -6,6 +6,8 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Footer from "./Pages/Footer/Footer";
 import Login from './Pages/Login/Login';
 import Navbar from "./Pages/Header/Navbar";
@@ -20,8 +22,10 @@ import Tech from "./Pages/Tech/Tech";
 import Movies from "./Pages/Movies/Movies";
 import Sports from "./Pages/Sports/Sports";
 import Music from "./Pages/Music/Music";
+import About from './Pages/About/About';
+import Contact from "./Pages/Contact/Contact";
 
-
+AOS.init();
 function App() {
   return (
     <div className="">
@@ -35,6 +39,12 @@ function App() {
          </Route>
          <Route path="/home">
             <Home/>
+         </Route>
+         <Route path="/about">
+            <About/>
+         </Route>
+         <Route path="/contact">
+            <Contact/>
          </Route>
          <Route path="/login">
             <Login/>

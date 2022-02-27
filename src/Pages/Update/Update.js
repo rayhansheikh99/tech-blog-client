@@ -15,7 +15,7 @@ const Update = () => {
     const { handleSubmit, register } = useForm();
     const history = useHistory();
     useEffect(()=>{
-        fetch(`http://localhost:5000/allposts`)
+        fetch(`https://pure-retreat-99800.herokuapp.com/allposts`)
         .then(res => res.json())
         .then(data => setPost(data))
     },[])
@@ -31,7 +31,7 @@ const Update = () => {
     const  onSubmit = data => {
         console.log(data)
         fetch(
-            `http://localhost:5000/updateposts/${postDetails?._id}`, 
+            `https://pure-retreat-99800.herokuapp.com/updateposts/${postDetails?._id}`, 
             {
             method: 'PUT',
             headers: {

@@ -9,7 +9,7 @@ const MyBlog = () => {
     
     // data fetch 
     useEffect(()=>{
-        fetch(`http://localhost:5000/posts?email=${user.email}`)
+        fetch(`https://pure-retreat-99800.herokuapp.com/posts?email=${user.email}`)
         .then(res=>res.json())
         .then(data=> setPosts(data))
         
@@ -20,7 +20,7 @@ const MyBlog = () => {
     const handleDeletePost = id =>{
         const proceed = window.confirm("Are you want to delete?")
         if(proceed){
-            const url = `http://localhost:5000/allposts/${id}`
+            const url = `https://pure-retreat-99800.herokuapp.com/allposts/${id}`
         fetch(url, {
             method:'DELETE'
         })

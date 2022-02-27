@@ -4,15 +4,16 @@ import useAuth from '../../Hooks/useAuth';
 import axios from "axios";
 import { useHistory } from 'react-router';
 
+
+
 const CreatePost = () => {
     const { user } = useAuth();
     const [postData, setPostData] = useState({});
     const date = new Date();
     const currentDate = date.toDateString();
-
     const history = useHistory();
 
-    const handelOrderField = (e) => {
+    const handleInputField = (e) => {
         const field = e.target.name;
         const value = e.target.value;
         const newPostData = { ...postData };
@@ -35,7 +36,7 @@ const CreatePost = () => {
           history.push('/blogs')
           console.log(data)
         axios
-        .post('http://localhost:5000/posts',data) 
+        .post('https://pure-retreat-99800.herokuapp.com/posts',data) 
         .then((res) => {
             if (res.status === 200) {
               alert("Post successfully published");
@@ -47,15 +48,21 @@ const CreatePost = () => {
             e.preventDefault() 
        
         };
+
     return (
         <div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} enctype="multipart/form-data">
             <div className='lg:mx-28'>
                <img className='w-full h-60 lg:h-96' src='https://soliloquywp.com/wp-content/uploads/2016/08/How-to-Set-a-Default-Featured-Image-in-WordPress.png' alt=""/> 
             </div>
             <div className='flex justify-between mt-2 text-sm text-gray-700 lg:mx-28'>
-                <span> <PlusCircleIcon className="h-6 m-3 text-gray-400 lg:h-10" aria-hidden="true" /></span>
-                <span onBlur={handelOrderField} className='mt-3' required='true'>
+                <span>
+                    <label htmlFor='fileInput'>
+                    <PlusCircleIcon className="h-6 m-3 cursor-pointer text-gray-400 lg:h-10" aria-hidden="true" />
+                    </label>
+                </span>
+                <input className='hidden' type='file' name="avatar"  id='fileInput'/>
+                <span onBlur={handleInputField} className='mt-3' required='true'>
                 <span className='font-mono text-base'>CATEGORY: </span>
                 <select id="category" name="category">
                     <option value="Music">Music</option>
@@ -68,13 +75,13 @@ const CreatePost = () => {
                 
             </div>
             <div className='mx-10 my-8 font-serif text-xl text-center lg:mx-48 lg:text-2xl'>
-                    <input onBlur={handelOrderField} name="image" className='w-full border-b-2 outline-none border-x-0 border-y-0' placeholder='Image URL Link' type="text" required/>
+                    <input onBlur={handleInputField} name="image" className='w-full border-b-2 outline-none border-x-0 border-y-0' placeholder='Image URL Link' type="text" required/>
             </div>
             <div className='mx-10 my-8 font-serif text-xl text-center lg:mx-48 lg:text-2xl'>
-                <input onBlur={handelOrderField} name="title" className='w-full border-b-2 outline-none border-x-0 border-y-0' type="text" placeholder='Add Title Here' required/>
+                <input onBlur={handleInputField} name="title" className='w-full border-b-2 outline-none border-x-0 border-y-0' type="text" placeholder='Add Title Here' required/>
             </div>
             <div className='mx-10 my-8 font-serif text-xl text-center lg:mx-48 lg:text-2xl'>
-                <textarea onBlur={handelOrderField} name="post" className='w-full border-b-2 outline-none h-36 border-x-0 border-y-0' type="text" placeholder='Write your post here' required/>
+                <textarea onBlur={handleInputField} name="post" className='w-full border-b-2 outline-none h-36 border-x-0 border-y-0' type="text" placeholder='Write your post here' required/>
             </div>
             <button type="submit" className='px-4 py-2 mx-10 text-white bg-purple-600 rounded-lg mb-36 hover:bg-black lg:mx-48 '>POST</button>
             </form>

@@ -8,7 +8,7 @@ const HomePost = () => {
     const [posts, setPosts]=useState([])
     // data fetch 
     useEffect(()=>{
-        fetch('http://localhost:5000/allposts')
+        fetch('https://pure-retreat-99800.herokuapp.com/allposts')
         .then(res=>res.json())
         .then(data=> setPosts(data.slice(0,6)))
 

@@ -8,7 +8,7 @@ const Movies = () => {
     
     // data fetch 
     useEffect(()=>{
-        fetch(`http://localhost:5000/moviesposts?category=Movies`)
+        fetch(`https://pure-retreat-99800.herokuapp.com/moviesposts?category=Movies`)
         .then(res=>res.json())
         .then(data=> setPosts(data))
 
@@ -25,7 +25,7 @@ const Movies = () => {
         {
            
                 posts.map(post => 
-                    <div className="max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"  key={post._id}>
+                    <div data-aos="zoom-in-up" className="max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"  key={post._id}>
                 <img className="h-48 mb-2 rounded-lg img lg:h-60" src={post.image} alt="product"/>
                 <div className='flex justify-between mx-2 mb-4'>
                 <p className='inline font-mono text-sm text-gray-600'>{post.category || post.category2}</p>
