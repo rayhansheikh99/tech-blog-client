@@ -16,7 +16,7 @@ const Music = () => {
     
 
     return (
-        <div className='flex flex-row'>
+        <div className='flex flex-row mt-20'>
                <div className='basis-1/4'>
                     <Sidebar/>
                </div>

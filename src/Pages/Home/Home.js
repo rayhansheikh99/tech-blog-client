@@ -6,7 +6,7 @@ import Sidebar from '../Sidebar/Sidebar';
 const Home = () => {
 
     return (
-        <div className=''>
+        <div className='mt-10'>
            <Banner/>
            <div className='flex flex-row'>
                <div className='basis-1/4'>

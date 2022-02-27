@@ -14,7 +14,7 @@ const Blogs = () => {
 
     return (
         <div>
-            <div className='grid justify-center mt-8 gap-6 mx-4 lg:mx-16 mb-6 lg:grid-cols-3'>
+            <div className='grid justify-center mt-28 gap-6 mx-4 lg:mx-16 mb-6 lg:grid-cols-3'>
             {
               posts.map(post=> <Posts key={post._id} post={post}/>)
             }  

@@ -39,7 +39,7 @@ const MyBlog = () => {
 
     return (
         <div>
-            <div className='grid grid-cols-1 gap-6 mt-6 mb-6 ml-10 lg:grid-cols-3'>
+            <div className='grid grid-cols-1 gap-6 mt-20 mb-6 ml-10 lg:grid-cols-3'>
         
         {
            

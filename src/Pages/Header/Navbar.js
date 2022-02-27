@@ -11,7 +11,7 @@ const Navbar = () => {
     return (
         <div>
             
-<nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
+<nav className="bg-white fixed top-0 inset-x-0 z-30 shadow-2xl shadow-cyan-500/50 px-2 sm:px-4 py-3.5 rounded dark:bg-gray-800">
 <div className="container flex flex-wrap justify-between items-center mx-auto">
 <Link as={Link} to="/home" className="flex">
 <img src="" alt=""/>

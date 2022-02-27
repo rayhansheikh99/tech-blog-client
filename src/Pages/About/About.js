@@ -4,7 +4,7 @@ import './about.css'
 const About = () => {
     return (
         <div data-aos="fade-up"
-        data-aos-anchor-placement="top-center">
+        data-aos-anchor-placement="top-center" className='mt-10'>
              <img className='w-full img-h' src="https://decisionsindentistry.com/wp-content/uploads/2020/06/hand-typing-keyboard.jpg" alt=""/>
             <div className='absolute bg-text top-20 mt-2 lg:mt-3 lg:top-96 border-t-2 border-orange-600 p-6'>
             <h1 className='font-serif font-semibold text-orange-300 lg:text-4xl'>About Us</h1>

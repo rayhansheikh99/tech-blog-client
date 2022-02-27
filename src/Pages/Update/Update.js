@@ -50,7 +50,7 @@ const Update = () => {
 
     return (
         <div >
-            <div className='lg:mx-28'>
+            <div className='lg:mx-28 mt-16'>
                <img className='w-full h-60 lg:h-96' src={postDetails?.image} alt=""/> 
             </div>
             <form onSubmit={handleSubmit(onSubmit)}>
