@@ -24,6 +24,9 @@ import Sports from "./Pages/Sports/Sports";
 import Music from "./Pages/Music/Music";
 import About from './Pages/About/About';
 import Contact from "./Pages/Contact/Contact";
+import ManagePost from './Pages/ManagePost/ManagePost';
+import MakeAdmin from './Pages/MakeAdmin/MakeAdmin';
+import DashboardAdmin from './Pages/DashboardAdmin/DashboardAdmin';
 
 AOS.init();
 function App() {
@@ -39,6 +42,15 @@ function App() {
          </Route>
          <Route path="/home">
             <Home/>
+         </Route>
+         <Route path="/dashboard">
+            <DashboardAdmin/>
+         </Route>
+         <Route path="/managepost">
+            <ManagePost/>
+         </Route>
+         <Route path="/makeadmin">
+            <MakeAdmin/>
          </Route>
          <Route path="/about">
             <About/>

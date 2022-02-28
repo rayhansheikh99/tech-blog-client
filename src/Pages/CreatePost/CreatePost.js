@@ -1,4 +1,4 @@
-import { PlusCircleIcon } from '@heroicons/react/outline';
+// import { PlusCircleIcon } from '@heroicons/react/outline';
 import React, { useState } from 'react';
 import useAuth from '../../Hooks/useAuth';
 import axios from "axios";
@@ -52,13 +52,13 @@ const CreatePost = () => {
     return (
         <div>
             <form onSubmit={handleSubmit} enctype="multipart/form-data">
-            <div className='lg:mx-28 mt-16'>
+            <div className='mt-16 lg:mx-28'>
                <img className='w-full h-60 lg:h-96' src='https://soliloquywp.com/wp-content/uploads/2016/08/How-to-Set-a-Default-Featured-Image-in-WordPress.png' alt=""/> 
             </div>
             <div className='flex justify-between mt-2 text-sm text-gray-700 lg:mx-28'>
                 <span>
                     {/* <label htmlFor='fileInput'>
-                    <PlusCircleIcon className="h-6 m-3 cursor-pointer text-gray-400 lg:h-10" aria-hidden="true" />
+                    <PlusCircleIcon className="h-6 m-3 text-gray-400 cursor-pointer lg:h-10" aria-hidden="true" />
                     </label> */}
                 </span>
                 <input className='hidden' type='file' name="avatar"  id='fileInput'/>
