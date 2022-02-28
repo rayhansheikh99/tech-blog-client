@@ -12,7 +12,7 @@ const MakeAdmin = () => {
     }
     const handleAdminSubmit = data => {
         const user = { email };
-        fetch('http://localhost:5000/users/admin', {
+        fetch('https://pure-retreat-99800.herokuapp.com/users/admin', {
             method: 'PUT',
             headers: {
         
