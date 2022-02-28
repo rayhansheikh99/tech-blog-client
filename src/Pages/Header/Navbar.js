@@ -11,7 +11,7 @@ const Navbar = () => {
     return (
         <div>
             
-<nav className="bg-white fixed top-0 inset-x-0 z-30 shadow-2xl shadow-cyan-500/50 px-2 sm:px-4 py-3.5 rounded dark:bg-gray-800">
+<nav className="bg-green-300 fixed top-0 inset-x-0 z-30 shadow-2xl shadow-cyan-500/50 px-2 sm:px-4 py-3.5 rounded dark:bg-gray-800">
 <div className="container flex flex-wrap items-center justify-between mx-auto">
 <Link as={Link} to="/home" className="flex">
 <img src="" alt=""/>
@@ -56,23 +56,23 @@ const Navbar = () => {
 <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
 <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
 <li>
-<Link as={Link} to="/home" className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Home</Link>
+<Link as={Link} to="/home" className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:pb-2 hover:border-b-2 hover:border-white hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Home</Link>
 </li>
 <li>
-<Link as={Link} to="/blogs" className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blogs</Link>
+<Link as={Link} to="/blogs" className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:pb-2 hover:border-b-2 hover:border-white hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blogs</Link>
 </li>
 <li>
-<Link as={Link} to="/about" className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</Link>
+<Link as={Link} to="/about" className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:pb-2 hover:border-b-2 hover:border-white hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</Link>
 </li>
 {user?.email?
 <li>
-<Link as={Link} to="/createpost" className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Write</Link>
+<Link as={Link} to="/createpost" className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:pb-2 hover:border-b-2 hover:border-white hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Write</Link>
 </li>:('')}
 <li>
-<Link as={Link} to="/contact" className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</Link>
+<Link as={Link} to="/contact" className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:pb-2 hover:border-b-2 hover:border-white hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</Link>
 </li>
 <li>
-{user?.email? (''): <Link as={Link} to="/login" className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Login</Link>}
+{user?.email? (''): <Link as={Link} to="/login" className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:pb-2 hover:border-b-2 hover:border-white hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Login</Link>}
 </li>
 
 </ul>

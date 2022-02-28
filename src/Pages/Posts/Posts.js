@@ -6,7 +6,7 @@ const Posts = (props) => {
     const{_id, title, image, post, date, category, category2, author}=props.post
     return (
         <div data-aos="zoom-in-up">
-            <div className="max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <div className="max-w-sm bg-white rounded-lg shadow-md hover:scale-110 dark:bg-gray-800 dark:border-gray-700">
                 <img className="h-48 mb-2 rounded-lg img lg:h-60" src={image} alt="product"/>
                 <div className='flex justify-between mx-2 mb-2'>
                 <p className='inline font-mono text-sm text-gray-600'>{category || category2}</p>
