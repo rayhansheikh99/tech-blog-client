@@ -50,7 +50,7 @@ const Update = () => {
 
     return (
         <div >
-            <div className='lg:mx-28 mt-16'>
+            <div className='mt-16 lg:mx-28'>
                <img className='w-full h-60 lg:h-96' src={postDetails?.image} alt=""/> 
             </div>
             <form onSubmit={handleSubmit(onSubmit)}>
@@ -68,7 +68,7 @@ const Update = () => {
                 </span>
                 
             </div>
-            <h1 className='lg:mx-48 text-xl font-bold mt-7'>Image URL:</h1>
+            <h1 className='text-xl font-bold lg:mx-48 mt-7'>Image URL:</h1>
             <div className='mx-10 my-8 font-serif text-xl text-center lg:mx-48 lg:text-xl'>
             <input className='w-full border-b-2 outline-none border-x-0 border-y-0'
           defaultValue={postDetails?.image}
@@ -76,7 +76,7 @@ const Update = () => {
   
         />
         </div>
-        <h1 className='lg:mx-48 text-xl font-bold'>Title Here</h1>
+        <h1 className='text-xl font-bold lg:mx-48'>Title Here</h1>
         <div className='mx-10 my-8 font-serif text-xl text-center lg:mx-48 lg:text-xl'>
         <input className='w-full border-b-2 outline-none border-x-0 border-y-0'
           defaultValue={postDetails?.title}
@@ -84,7 +84,7 @@ const Update = () => {
   
         />
         </div>
-        <h1 className='lg:mx-48 text-xl font-bold mt-4'>Write your post here</h1>
+        <h1 className='mt-4 text-xl font-bold lg:mx-48'>Write your post here</h1>
         <div className='mx-10 my-8 font-serif text-xl text-center lg:mx-48 lg:text-2xl'>
                 <textarea className='w-full border-b-2 outline-none h-36 border-x-0 border-y-0' defaultValue={postDetails?.post}  {...register("post", { required: true })}/>
             </div>
