@@ -25,7 +25,7 @@ const PostDetails = () => {
 
     return (
         <div>
-            <div className='lg:mx-28'>
+            <div className='mt-20 lg:mx-28'>
                <img className='w-full h-60 lg:h-96' src={postDetails?.image} alt=""/> 
             </div>
             
