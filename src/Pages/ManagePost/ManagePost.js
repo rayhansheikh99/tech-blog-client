@@ -55,7 +55,7 @@ const ManagePost = () => {
                 <div className='flex justify-between mx-2 mb-4'>
                
                 <span className=''>
-                <TrashIcon onClick={()=>handleDeletePost(post._id)} className="inline h-4 text-red-700 cursor-pointer lg:h-5" aria-hidden="true" />
+                <TrashIcon onClick={()=>handleDeletePost(post._id)} className="inline h-4 text-red-700 cursor-pointer lg:hover:h-6 lg:h-5" aria-hidden="true" />
                 </span>
                 <p className='inline font-mono text-sm text-gray-600'>{post.category || post.category2}</p>
                 <p className='inline font-mono text-sm text-gray-600'>{post.date}</p>

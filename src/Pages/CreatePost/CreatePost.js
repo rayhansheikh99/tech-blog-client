@@ -75,13 +75,13 @@ const CreatePost = () => {
                 
             </div>
             <div className='mx-10 my-8 font-serif text-xl text-center lg:mx-48 lg:text-2xl'>
-                    <input onBlur={handleInputField} name="image" className='w-full border-b-2 outline-none border-x-0 border-y-0' placeholder='Image URL Link' type="text" required/>
+                    <input onBlur={handleInputField} name="image" className='w-full border-b-2 outline-none border-x-0 border-y-0 border-b-orange-400' placeholder='Image URL Link' type="text" required/>
             </div>
             <div className='mx-10 my-8 font-serif text-xl text-center lg:mx-48 lg:text-2xl'>
-                <input onBlur={handleInputField} name="title" className='w-full border-b-2 outline-none border-x-0 border-y-0' type="text" placeholder='Add Title Here' required/>
+                <input onBlur={handleInputField} name="title" className='w-full border-b-2 outline-none border-x-0 border-y-0 border-b-orange-400' type="text" placeholder='Add Title Here' required/>
             </div>
             <div className='mx-10 my-8 font-serif text-xl text-center lg:mx-48 lg:text-2xl'>
-                <textarea onBlur={handleInputField} name="post" className='w-full border-b-2 outline-none h-36 border-x-0 border-y-0' type="text" placeholder='Write your post here' required/>
+                <textarea onBlur={handleInputField} name="post" className='w-full border-b-2 outline-none h-36 border-x-0 border-y-0 border-b-orange-400' type="text" placeholder='Write your post here' required/>
             </div>
             <button type="submit" className='px-4 py-2 mx-10 text-white bg-purple-600 rounded-lg mb-36 hover:bg-black lg:mx-48 '>POST</button>
             </form>

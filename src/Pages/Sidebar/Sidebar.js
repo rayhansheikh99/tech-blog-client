@@ -14,11 +14,11 @@ const Sidebar = () => {
         <div className='category'>
             <div>
                 <div>
-                <Link className='block px-2 py-2 mt-4 font-serif text-center lg:mx-6 hover:bg-gray-200' to="/blogs">ALL CATEGORY</Link>
-                    <Link className='block py-2 text-center lg:mx-6 hover:bg-gray-200 border-y-2' to="/tech">Tech</Link>
-                    <Link className='block py-2 text-center lg:mx-6 hover:bg-gray-200' to="/movies">Movies</Link>
-                    <Link className='block py-2 text-center lg:mx-6 hover:bg-gray-200 border-y-2' to="/sports">Sports</Link>
-                    <Link className='block py-2 mb-4 text-center border-b-2 lg:mx-6 hover:bg-gray-200' to="/music">Music</Link>
+                <Link className='block px-2 py-2 mt-4 font-serif text-center lg:mx-6 hover:bg-green-200' to="/blogs">ALL CATEGORY</Link>
+                    <Link className='block py-2 text-center lg:mx-6 hover:bg-green-200 border-y-2' to="/tech">Tech</Link>
+                    <Link className='block py-2 text-center lg:mx-6 hover:bg-green-200' to="/movies">Movies</Link>
+                    <Link className='block py-2 text-center lg:mx-6 hover:bg-green-200 border-y-2' to="/sports">Sports</Link>
+                    <Link className='block py-2 mb-4 text-center border-b-2 lg:mx-6 hover:bg-green-200' to="/music">Music</Link>
                 </div>
             </div>
         </div>

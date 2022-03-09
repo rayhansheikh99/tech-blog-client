@@ -49,8 +49,8 @@ const MyBlog = () => {
                 <div className='flex justify-between mx-2 mb-4'>
                
                 <span className=''>
-                <Link to={`/updateposts/${post?._id}`}><PencilAltIcon className="inline h-4 mr-2 text-blue-400 cursor-pointer lg:h-6" aria-hidden="true" /></Link>
-                <TrashIcon onClick={()=>handleDeletePost(post._id)} className="inline h-4 text-red-700 cursor-pointer lg:h-5" aria-hidden="true" />
+                <Link to={`/updateposts/${post?._id}`}><PencilAltIcon className="inline h-4 mr-2 text-blue-400 cursor-pointer lg:hover:h-7 lg:h-6" aria-hidden="true" /></Link>
+                <TrashIcon onClick={()=>handleDeletePost(post._id)} className="inline h-4 text-red-700 cursor-pointer lg:hover:h-6 lg:h-5" aria-hidden="true" />
                 </span>
                 <p className='inline font-mono text-sm text-gray-600'>{post.category || post.category2}</p>
                 <p className='inline font-mono text-sm text-gray-600'>{post.date}</p>
