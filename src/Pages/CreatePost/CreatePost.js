@@ -36,7 +36,7 @@ const CreatePost = () => {
           history.push('/blogs')
           console.log(data)
         axios
-        .post('https://pure-retreat-99800.herokuapp.com/posts',data) 
+        .post('https://tech-blog-server-ogqh.onrender.com/posts',data) 
         .then((res) => {
             if (res.status === 200) {
               alert("Post successfully published");

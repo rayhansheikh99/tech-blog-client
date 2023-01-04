@@ -6,7 +6,7 @@ const Blogs = () => {
     const [posts, setPosts]=useState([])
     // data fetch 
     useEffect(()=>{
-        fetch('https://pure-retreat-99800.herokuapp.com/allposts')
+        fetch('https://tech-blog-server-ogqh.onrender.com/allposts')
         .then(res=>res.json())
         .then(data=> setPosts(data))
 

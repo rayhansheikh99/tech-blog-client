@@ -8,7 +8,7 @@ const Sports = () => {
     
     // data fetch 
     useEffect(()=>{
-        fetch(`https://pure-retreat-99800.herokuapp.com/sportsposts?category=Sports`)
+        fetch(`https://tech-blog-server-ogqh.onrender.com/sportsposts?category=Sports`)
         .then(res=>res.json())
         .then(data=> setPosts(data))
 

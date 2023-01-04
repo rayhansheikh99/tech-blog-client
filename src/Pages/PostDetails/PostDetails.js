@@ -11,7 +11,7 @@ const PostDetails = () => {
     const {Id} = useParams();
 
     useEffect(()=>{
-        fetch(`https://pure-retreat-99800.herokuapp.com/allposts`)
+        fetch(`https://tech-blog-server-ogqh.onrender.com/allposts`)
         .then(res => res.json())
         .then(data => setPost(data))
     },[])

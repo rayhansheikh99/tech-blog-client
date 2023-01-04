@@ -9,7 +9,7 @@ const ManagePost = () => {
     
     // data fetch 
     useEffect(()=>{
-        fetch(`https://pure-retreat-99800.herokuapp.com/allposts`)
+        fetch(`https://tech-blog-server-ogqh.onrender.com/allposts`)
         .then(res=>res.json())
         .then(data=> setPosts(data))
         
@@ -20,7 +20,7 @@ const ManagePost = () => {
     const handleDeletePost = id =>{
         const proceed = window.confirm("Are you want to delete?")
         if(proceed){
-            const url = `https://pure-retreat-99800.herokuapp.com/allposts/${id}`
+            const url = `https://tech-blog-server-ogqh.onrender.com/allposts/${id}`
         fetch(url, {
             method:'DELETE'
         })

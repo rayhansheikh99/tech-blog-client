@@ -2,9 +2,9 @@ import Home from "./Pages/Home/Home";
 import React from 'react';
 import 'flowbite';
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route
+   BrowserRouter as Router,
+   Switch,
+   Route
 } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -30,74 +30,74 @@ import DashboardAdmin from './Pages/DashboardAdmin/DashboardAdmin';
 
 AOS.init();
 function App() {
-  return (
-    <div className="">
+   return (
+      <div className="">
          <AuthProvider>
-        <Router>
-         
-          <Navbar/>
-       <Switch>
-         <Route exact path="/">
-            <Home/>
-         </Route>
-         <Route path="/home">
-            <Home/>
-         </Route>
-         <Route path="/dashboard">
-            <DashboardAdmin/>
-         </Route>
-         <Route path="/managepost">
-            <ManagePost/>
-         </Route>
-         <Route path="/makeadmin">
-            <MakeAdmin/>
-         </Route>
-         <Route path="/about">
-            <About/>
-         </Route>
-         <Route path="/contact">
-            <Contact/>
-         </Route>
-         <Route path="/login">
-            <Login/>
-         </Route>
-         <Route path="/signup">
-            <Signup/>
-         </Route>
-         <Route path="/blogs">
-            <Blogs/>
-         </Route>
-         <Route path="/myblog">
-            <MyBlog/>
-         </Route>
-         <Route path="/tech">
-            <Tech/>
-         </Route>
-         <Route path="/movies">
-            <Movies/>
-         </Route>
-         <Route path="/sports">
-            <Sports/>
-         </Route>
-         <Route path="/music">
-            <Music/>
-         </Route>
-         <Route path="/postdetails/:Id">
-            <PostDetails/>
-         </Route>
-         <Route path="/createpost">
-            <CreatePost/>
-         </Route>
-         <Route path="/updateposts/:Id">
-            <Update/>
-         </Route>
-        </Switch>
-          <Footer/>
-          
-        </Router>
-        </AuthProvider>
-    </div>
-  );
+            <Router>
+
+               <Navbar />
+               <Switch>
+                  <Route exact path="/">
+                     <Home />
+                  </Route>
+                  <Route path="/home">
+                     <Home />
+                  </Route>
+                  <Route path="/dashboard">
+                     <DashboardAdmin />
+                  </Route>
+                  <Route path="/managepost">
+                     <ManagePost />
+                  </Route>
+                  <Route path="/makeadmin">
+                     <MakeAdmin />
+                  </Route>
+                  <Route path="/about">
+                     <About />
+                  </Route>
+                  <Route path="/contact">
+                     <Contact />
+                  </Route>
+                  <Route path="/login">
+                     <Login />
+                  </Route>
+                  <Route path="/signup">
+                     <Signup />
+                  </Route>
+                  <Route path="/blogs">
+                     <Blogs />
+                  </Route>
+                  <Route path="/myblog">
+                     <MyBlog />
+                  </Route>
+                  <Route path="/tech">
+                     <Tech />
+                  </Route>
+                  <Route path="/movies">
+                     <Movies />
+                  </Route>
+                  <Route path="/sports">
+                     <Sports />
+                  </Route>
+                  <Route path="/music">
+                     <Music />
+                  </Route>
+                  <Route path="/postdetails/:Id">
+                     <PostDetails />
+                  </Route>
+                  <Route path="/createpost">
+                     <CreatePost />
+                  </Route>
+                  <Route path="/updateposts/:Id">
+                     <Update />
+                  </Route>
+               </Switch>
+               <Footer />
+
+            </Router>
+         </AuthProvider>
+      </div>
+   );
 }
 
 export default App;

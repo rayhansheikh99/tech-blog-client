@@ -8,4 +8,4 @@
 - Admin Can manage all post and also can delete all post
 
 <h5>Live Site: https://tech-blogbd.web.app/</h5>
-<h5>Server Live Site: https://pure-retreat-99800.herokuapp.com/</h5>
+<h5>Server Live Site: https://tech-blog-server-ogqh.onrender.com/</h5>

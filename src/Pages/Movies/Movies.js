@@ -8,7 +8,7 @@ const Movies = () => {
     
     // data fetch 
     useEffect(()=>{
-        fetch(`https://pure-retreat-99800.herokuapp.com/moviesposts?category=Movies`)
+        fetch(`https://tech-blog-server-ogqh.onrender.com/moviesposts?category=Movies`)
         .then(res=>res.json())
         .then(data=> setPosts(data))
 
